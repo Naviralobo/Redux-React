@@ -7,16 +7,16 @@ const Counter = () => {
   const toggleCounterHandler = () => {};
 
   const incrementHandler = () => {
-    dispatch({ type: "increment" });
+    dispatch({ type: "increment", amount: 1 });
   };
   const decrementHandler = () => {
-    dispatch({ type: "decrement" });
+    dispatch({ type: "decrement", amount: 1 });
   };
   const incrementBy5Handler = () => {
-    dispatch({ type: "incrementBy5" });
+    dispatch({ type: "increment", amount: 5 });
   };
   const decrementBy5Handler = () => {
-    dispatch({ type: "decrementBy5" });
+    dispatch({ type: "decrement", amount: 5 });
   };
   return (
     <main className={classes.counter}>
